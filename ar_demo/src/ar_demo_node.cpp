@@ -62,7 +62,7 @@ void axis_generate(visualization_msgs::Marker &line_list, Vector3d &origin, int 
 {
 
     line_list.id = id;
-    line_list.header.frame_id = "world";
+    line_list.header.frame_id = "map";
     line_list.header.stamp = ros::Time::now();
     line_list.action = visualization_msgs::Marker::ADD;
     line_list.type = visualization_msgs::Marker::LINE_LIST;
@@ -99,7 +99,7 @@ void cube_generate(visualization_msgs::Marker &marker, Vector3d &origin, int id)
 {
 
     //uint32_t shape = visualization_msgs::Marker::CUBE;
-    marker.header.frame_id = "world";
+    marker.header.frame_id = "map";
     marker.header.stamp = ros::Time::now();
     marker.ns = "basic_shapes";
     marker.id = 0;

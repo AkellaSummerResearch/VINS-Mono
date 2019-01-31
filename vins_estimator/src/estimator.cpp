@@ -574,6 +574,7 @@ void Estimator::double2vector()
         tic[i] = Vector3d(para_Ex_Pose[i][0],
                           para_Ex_Pose[i][1],
                           para_Ex_Pose[i][2]);
+        ROS_WARN_STREAM("extrinsic translation:\t" << endl << para_Ex_Pose[i][0] << "\t" << para_Ex_Pose[i][1] << "\t" << para_Ex_Pose[i][0]);
         ric[i] = Quaterniond(para_Ex_Pose[i][6],
                              para_Ex_Pose[i][3],
                              para_Ex_Pose[i][4],
