@@ -30,6 +30,8 @@ include_directories(
   ${EIGEN3_INCLUDE_DIR}
 )
 
+message(WARNING "CERES_INCLUDE_DIRS: ${CERES_INCLUDE_DIRS}")
+
 catkin_package()
 
 add_executable(vins_estimator
